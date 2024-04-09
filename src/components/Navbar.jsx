@@ -14,9 +14,6 @@ const Navbar = () => {
         <Link href='/rq-super-heroes'>RQ Super Heroes</Link>
       </li>
 
-      <li>
-        <Link href='/rq-super-heroes-second'>RQ Super Heroes 2</Link>
-      </li>
     </ul>
   </nav>
   )
