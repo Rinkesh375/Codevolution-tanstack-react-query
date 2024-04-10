@@ -21,6 +21,11 @@ const Navbar = () => {
       <li>
         <Link href='/parallel-queries'>Parallel Queries Fetching</Link>
       </li>
+
+      <li>
+        <Link href='/depedent-queries'>Series One After Another Queries Fetching</Link>
+      </li>
+      
     </ul>
   </nav>
   )

@@ -32,5 +32,19 @@
       "name": "Mukesh"
       
     }
+  ],
+  "youtuber":[
+    {
+      "id":"codewithharry@.com",
+      "name":"codewithharry"
+
+    }
+  ],
+  "courses":[
+    {
+      "id":"codewithharry",
+      "tutorial":["React","Next.js","Sigma"]
+    }
   ]
+
 }
