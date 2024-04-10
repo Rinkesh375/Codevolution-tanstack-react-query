@@ -8,7 +8,7 @@ import useCustomQuery from "@/components/customHook/useCustomQuery";
 
 
 const TanstackQueryFetch = () => {
-  const { data, isError, isLoading, error, isFetching,refetch } = useCustomQuery("superheroes-for-one",true)
+  const { data, isError, isLoading, error, isFetching,refetch } = useCustomQuery("superheroes-1",true)
 
  
   return (
