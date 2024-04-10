@@ -12,6 +12,7 @@ async function fetchSuperHero() {
 }
 
 const useCustomQuery = (uniqueKey,enabledValue) => {
+  
   return useQuery({
     queryKey: [uniqueKey],
     queryFn: fetchSuperHero,

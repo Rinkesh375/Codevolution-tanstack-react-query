@@ -15,5 +15,22 @@
       "name": "Wonder Wom4",
       "alterEgo": "Princess Diana"
     }
+  ],
+  "friends":[
+    {
+      "id": 1,
+      "name": "Rinkesh"
+
+    },
+    {
+      "id": 2,
+      "name": "Nitish"
+     
+    },
+    {
+      "id": 3,
+      "name": "Mukesh"
+      
+    }
   ]
 }

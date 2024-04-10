@@ -17,6 +17,10 @@ const Navbar = () => {
       <li>
         <Link href='/rq-super-heroes-second'>RQ Super Heroes 2</Link>
       </li>
+
+      <li>
+        <Link href='/parallel-queries'>Parallel Queries Fetching</Link>
+      </li>
     </ul>
   </nav>
   )
