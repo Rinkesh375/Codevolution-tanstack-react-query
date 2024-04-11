@@ -25,9 +25,24 @@ const AddHero = () => {
     const queryClient = useQueryClient();
   const { isLoading, isError, error, mutate, isSuccess } = useMutation({
     mutationFn: addNewHero,
-    onSuccess: () => {
+    onSuccess: (data) => {
+        /*
         //This onSuccess code will update the UI or we can say it will show the new added data by doing invalidte queryClient.invalidateQueries("super-hero-add-page")
-        return queryClient.invalidateQueries("super-hero-add-page")
+        
+        return queryClient.invalidateQueries(["super-hero-add-page"])
+        */
+
+         // "------------------------------------------------------------------------"
+       
+         /*
+         //without calling Invalid or api now we set the data in current "super-hero-add-page" key
+         queryClient.setQueryData(["super-hero-add-page"],(oldQueryData)=>{
+            return {
+                ...oldQueryData,
+                data:[...oldQueryData.data,data.data]
+            }
+         })
+         */
     },
   });
 
@@ -50,7 +65,7 @@ const AddHero = () => {
         <button onClick={handleAddNewDataButtonClick}>Add Data</button>
       </div>
       {data?.data.map((hero) => (
-        <h1 key={hero.id}>{hero?.name}</h1>
+        <h1 key={hero.id}>{hero?.name} {hero?.id}</h1>
       ))}
     </>
   );
