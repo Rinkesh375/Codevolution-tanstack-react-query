@@ -26,6 +26,9 @@ const Navbar = () => {
         <Link href='/depedent-queries'>Series One After Another Queries Fetching</Link>
       </li>
       
+      <li>
+        <Link href='/pagination-with-previous-data'>Pagination With Previous Data</Link>
+      </li>
     </ul>
   </nav>
   )
