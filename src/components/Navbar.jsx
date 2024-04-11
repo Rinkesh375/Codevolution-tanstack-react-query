@@ -29,6 +29,10 @@ const Navbar = () => {
       <li>
         <Link href='/pagination-with-previous-data'>Pagination With Previous Data</Link>
       </li>
+
+      <li>
+        <Link href='/add-hero'>Add New Hero</Link>
+      </li>
     </ul>
   </nav>
   )

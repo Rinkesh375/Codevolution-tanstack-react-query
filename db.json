@@ -14,36 +14,41 @@
       "id": 3,
       "name": "Wonder Wom4",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "Rinkesh",
+      "alterEgo": "Full Stack Developer",
+      "id": 4
     }
   ],
-  "friends":[
+  "friends": [
     {
       "id": 1,
       "name": "Rinkesh"
-
     },
     {
       "id": 2,
       "name": "Nitish"
-     
     },
     {
       "id": 3,
       "name": "Mukesh"
-      
     }
   ],
-  "youtuber":[
+  "youtuber": [
     {
-      "id":"codewithharry@.com",
-      "name":"codewithharry"
-
+      "id": "codewithharry@.com",
+      "name": "codewithharry"
     }
   ],
-  "courses":[
+  "courses": [
     {
-      "id":"codewithharry",
-      "tutorial":["React","Next.js","Sigma"]
+      "id": "codewithharry",
+      "tutorial": [
+        "React",
+        "Next.js",
+        "Sigma"
+      ]
     }
   ],
   "colors": [
@@ -80,5 +85,4 @@
       "label": "purple"
     }
   ]
-
 }
