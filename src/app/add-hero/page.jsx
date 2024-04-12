@@ -25,25 +25,18 @@ const AddHero = () => {
     const queryClient = useQueryClient();
   const { isLoading, isError, error, mutate, isSuccess } = useMutation({
     mutationFn: addNewHero,
-    onSuccess: (data) => {
-        /*
-        //This onSuccess code will update the UI or we can say it will show the new added data by doing invalidte queryClient.invalidateQueries("super-hero-add-page")
-        
-        return queryClient.invalidateQueries(["super-hero-add-page"])
-        */
+    //onMutate gets called before mutation gets invoked or fired
+    onMutate(){
 
-         // "------------------------------------------------------------------------"
-       
-         /*
-         //without calling Invalid or api now we set the data in current "super-hero-add-page" key
-         queryClient.setQueryData(["super-hero-add-page"],(oldQueryData)=>{
-            return {
-                ...oldQueryData,
-                data:[...oldQueryData.data,data.data]
-            }
-         })
-         */
     },
+    //On getting this gets called
+    onError(){
+
+    }, 
+    // either success or failure this below gets called
+    onSettled(){
+
+    }
   });
 
   const {
